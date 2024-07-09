@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  inline-size: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  /* <weight>: Use a value from 300 to 900 */
+  font-weight: 400;
+  /* normal || italic */
+  font-style: normal;
+  min-height: 100vh;
+  max-width: 144rem;
+  overflow-inline: hidden;
+  margin: 0 auto;
+}
+
+.logo {
+  inline-size: 11.9rem;
+  block-size: 2.8rem;
+  margin: 8rem auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8.8rem;
+}
+
+.img-hero-left {
+  margin-left: -4rem;
+}
+.img-hero-right {
+  margin-right: -4rem;
+}
+
+.header__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.3rem;
+  max-inline-size: 54rem;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-weight: 900;
+  color: #28283d;
+  text-align: center;
+}
+
+.header__hero p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #87879d;
+  text-align: center;
+}
+
+.header__buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.button-download {
+  background-color: #4d96a9;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-download span {
+  color: #8fe3f9;
+}
+
+.button-what {
+  background-color: #855fb1;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-download:hover,
+.button-download:focus {
+  background-color: #71c0d4;
+}
+
+.button-what:hover,
+.button-what:focus {
+  background-color: #b18bdd;
+}
+
+.separator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 1px;
+  height: 8.4rem;
+  border: 1px solid hsla(240, 10%, 57%, 0.25);
+}
+
+.separator p {
+  font-size: 1.6rem;
+  color: #87879d;
+  font-weight: 900;
+  padding: 1.9rem;
+  border-radius: 999px;
+  border: 1px solid hsla(240, 10%, 57%, 0.25);
+}
+
+.number-1 {
+  margin-top: 11rem;
+}
+
+.gallery {
+  margin: 6.4rem auto;
+  max-inline-size: 111rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  max-inline-size: 25.5rem;
+  border-radius: 1rem;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 54rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #4d96a9;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #28283d;
+  text-align: center;
+  margin-block-end: 1.6rem;
+}
+
+main p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #87879d;
+  text-align: center;
+}
+
+.number-2 {
+  margin-top: 7.2rem;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(192, 37%, 48%, 0.7);
+  z-index: 10;
+}
+
+footer {
+  min-block-size: 30.8rem;
+  max-inline-size: 144rem;
+  background-image: url(./assets/desktop/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  gap: 12.5rem;
+  position: relative;
+}
+
+footer h3 {
+  margin-left: 10rem;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fafafa;
+  text-align: left;
+  z-index: 20;
+}
+
+footer p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fafafa;
+  z-index: 20;
+}
+
+.footer-button {
+  display: flex;
+  gap: 0.5rem;
+  background-color: #855fb1;
+  margin-right: 10rem;
+  z-index: 20;
+}
+
+.footer-button span {
+  color: #d9b8ff;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background-color: #b18bdd;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+
+  .img-hero-right {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .header__hero {
+    margin: 0 auto;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-button {
+    margin-right: 0;
+  }
+
+  footer h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
